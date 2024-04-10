@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+             th{
+    background-color: bisque;
+  } 
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  border-radius: 10px;
+}
+h1{
+    color: rgb(241, 16, 50);
+}
+td, th {
+  border: 1px solid #000000;
+  text-align: left;
+  padding: 8px;
+}    
+        </style>
+    </head>
+<body>
+    <h1>Sum Series Number</h1>
+    <table>
+        <tr> 
+        <th>1 to 20 Sum Series Number</th>
+          </tr>
+        <tr> 
+               <th id="demo"> </th>
+            </tr>
+    </table>
+    <p id="demo"></p>
+    <script>
+        var n1 = 1;n2=0;
+        var n = 0;
+        var sum = 0;
+        text='';
+    for (var x = 0; x < 5; x++){
+        n3 = n2 + n1;
+        text += n3 + ' ' ;
+        n1=n2;
+        n2=n3;
+        sum=sum+1;
+       document.getElementById('demo').innerHTML = text; 
+    } 
+    </script> 
+</body>
+</html>
+
+ 
+ 
